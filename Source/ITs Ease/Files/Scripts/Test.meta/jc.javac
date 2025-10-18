@@ -23,13 +23,13 @@ void repeat() {
   float t = Mathf.normalize(time / (duration), 0f, 1f);
   switch (mode) {
     case P:
-      myTransform.setPosition(Easer.ease(start.getX(), end.getX(), t, type), Easer.ease(start.getY(), end.getY(), t, type), Easer.ease(start.getZ(), end.getZ(), t, type));
+      myTransform.setPosition(Easer.easeVec(start, end, t, type));
       break;
     case R:
-      myTransform.getRotation().setFromEuler(Easer.ease(start.getX(), end.getX(), t, type), Easer.ease(start.getY(), end.getY(), t, type), Easer.ease(start.getZ(), end.getZ(), t, type));
+      myTransform.setRotation(Easer.easeQua(start, end, t, type));
       break;
     case S:
-      myTransform.setScale(Easer.ease(start.getX(), end.getX(), t, type), Easer.ease(start.getY(), end.getY(), t, type), Easer.ease(start.getZ(), end.getZ(), t, type));
+      myTransform.setScale(Easer.easeVec(start, end, t, type));
       break;
     default:
   } 
