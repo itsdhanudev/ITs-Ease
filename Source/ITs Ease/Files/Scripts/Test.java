@@ -6,11 +6,16 @@ public enum Mode {
 }
 
 public Mode mode = Mode.P;
-public float time, duration, b;
+public float time, duration;
+
 public Vector3 start = new Vector3();
 public Vector3 end = new Vector3();
 public Text3D text;
+
 public EasingTypes type;
+public Curve curve = new Curve();
+
+public boolean useCurve;
 /// Run only once
 void start() {}
 
@@ -23,13 +28,16 @@ void repeat() {
   float t = Mathf.normalize(time / (duration), 0f, 1f);
   switch (mode) {
     case P:
-      myTransform.setPosition(Easer.easeVec(start, end, t, type));
+      if (useCurve) myTransform.setPosition(Easer.easeVec(start, end, t, curve));
+      else myTransform.setPosition(Easer.easeVec(start, end, t, curve));
       break;
     case R:
-      myTransform.setRotation(Easer.easeQua(start, end, t, type));
+      if (useCurve) myTransform.setRotation(Easer.easeQua(start, end, t, curve));
+      else myTransform.setRotation(Easer.easeQua(start, end, t, type));
       break;
     case S:
-      myTransform.setScale(Easer.easeVec(start, end, t, type));
+      if (useCurve) myTransform.setScale(Easer.easeVec(start, end, t, curve));
+      else myTransform.setScale(Easer.easeVec(start, end, t, type));
       break;
     default:
   } 
