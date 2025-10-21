@@ -1,5 +1,0 @@
-S/Unix shell started, type your command.
->- S:ITs Ease/sh: can't find: tty fd No such device or address
->- S:ITs Ease/sh: warning: won't have full job control
->- S:ITs Ease/ :ITs Ease $ 
->- S:ITs Ease/Shell finalized
