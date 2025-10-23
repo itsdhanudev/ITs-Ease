@@ -1,0 +1,24 @@
+package JAVARuntime;
+/** AUTO GENERATED RESOURCE BINDINGS **/
+class R{
+
+  /** -TABLE-
+    read_me_txt
+  */
+
+  public static class File extends Resources.File{
+    public File(String path) {
+      super(path, false);
+    }
+    public File(String path, boolean isDirectory) {
+      super(path, isDirectory);
+    }
+  }
+
+  public static File getFile(String path){
+    Resources.File f = Resources.getFile(path);
+    return new File(f.getPath(), f.isDirectory());
+  }
+
+  public static final File read_me_txt = new File("READ-ME.txt");
+}

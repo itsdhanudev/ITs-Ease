@@ -74,6 +74,10 @@ public final class Easer {
     }
   }
 
+  public static float ease(float start, float end, float t, Curve curve) {
+      return EasingFunctions.linear(start,end,curve.evaluate(t));
+  } 
+
   public static Vector2 easeVec(Vector2 start, Vector2 end, float t, EasingTypes type) {
     Vector2 desiredVec = new Vector2(ease(start.getX(), end.getX(), t, type), ease(start.getY(), end.getY(), t, type));
     return desiredVec;
@@ -82,11 +86,27 @@ public final class Easer {
   public static Vector3 easeVec(Vector3 start, Vector3 end, float t, EasingTypes type) {
     Vector3 desiredVec = new Vector3(ease(start.getX(), end.getX(), t, type), ease(start.getY(), end.getY(), t, type), ease(start.getZ(), end.getZ(), t, type));
     return desiredVec;
-  } 
+  }
+  
+  public static Vector2 easeVec(Vector2 start, Vector2 end, float t, Curve curve) {
+    Vector2 desiredVec = new Vector2(ease(start.getX(), end.getX(), t, curve), ease(start.getY(), end.getY(), t, curve));
+    return desiredVec;
+  }
+
+  public static Vector3 easeVec(Vector3 start, Vector3 end, float t, Curve curve) {
+    Vector3 desiredVec = new Vector3(ease(start.getX(), end.getX(), t,curve), ease(start.getY(), end.getY(), t, curve), ease(start.getZ(), end.getZ(), t, curve));
+    return desiredVec;
+  }
 
   public static Quaternion easeQua(Vector3 start, Vector3 end, float t, EasingTypes type) {
     Quaternion desiredQua;
     desiredQua = Quaternion.fromEuler(new Vector3(ease(start.getX(), end.getX(), t, type), ease(start.getY(), end.getY(), t, type), ease(start.getZ(), end.getZ(), t, type)));
+    return desiredQua;
+  }
+  
+  public static Quaternion easeQua(Vector3 start, Vector3 end, float t, Curve curve) {
+    Quaternion desiredQua;
+    desiredQua = Quaternion.fromEuler(new Vector3(ease(start.getX(), end.getX(), t, curve), ease(start.getY(), end.getY(), t, curve), ease(start.getZ(), end.getZ(), t, curve)));
     return desiredQua;
   }
   /*

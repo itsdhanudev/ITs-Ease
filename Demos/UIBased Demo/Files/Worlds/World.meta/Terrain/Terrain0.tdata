@@ -1,0 +1,12 @@
+# ITsMagic terrain data file
+# Version 1.0
+FLOAT [262144]
+table
+0.15
+x262143
+;
+FLOAT [262144]
+layer:DefaultLayer
+1
+x262143
+;

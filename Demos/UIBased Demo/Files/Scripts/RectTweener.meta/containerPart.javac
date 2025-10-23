@@ -1,0 +1,45 @@
+package JAVARuntime;
+
+import java.util.*; //[I-S]LN=2;[I-E]
+import java.text.*; //[I-S]LN=3;[I-E]
+import java.net.*; //[I-S]LN=4;[I-E]
+import java.math.*; //[I-S]LN=5;[I-E]
+import java.io.*; //[I-S]LN=6;[I-E]
+import java.nio.*; //[I-S]LN=7;[I-E]
+import java.nio.*; //[I-S]LN=8;[I-E]
+import java.util.HashMap; //[I-S]LN=9;[I-E]
+import java.util.Map; //[I-S]LN=10;[I-E]
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+import java.util.concurrent.locks.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import java.util.zip.*;
+import java.time.*;
+import java.time.chrono.*;
+import java.time.format.*;
+import java.time.temporal.*;
+import java.time.zone.*;
+
+
+
+public class _JContainer{}
+
+//C-R:RectTweener
+
+ //[I-S]LN=1;[I-E]
+ //[I-S]LN=11;[I-E]
+/* @Author Dhanu */  //[I-S]LN=12;[I-E]
+class RectTweener extends Component{ //[I-S]LN=13;[I-E]
+    // we be updated later //[I-S]LN=14;[I-E]
+   /// Run only once //[I-S]LN=15;[I-E]
+public    void start() { //[I-S]LN=16;[I-E]
+        //[I-S]LN=17;[I-E]
+   } //[I-S]LN=18;[I-E]
+    //[I-S]LN=19;[I-E]
+   /// Repeat every frame //[I-S]LN=20;[I-E]
+public    void repeat() { //[I-S]LN=21;[I-E]
+        //[I-S]LN=22;[I-E]
+   } //[I-S]LN=23;[I-E]
+} //[I-S]LN=24;[I-E]

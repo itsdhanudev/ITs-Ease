@@ -18,3 +18,19 @@ Clone the repository and include it in your project:
 
 ```bash
 git clone https://github.com/itsdhanudev/ITs-Ease.git
+```
+
+# 🧩 TO-DO
+
+- ⚙️ Core
+    - [x]  Easing Functions
+    - [ ]  Advanced Easing Functions
+    - [x]  Curves Support
+    - [ ]  Blended Easing (combine two easings)
+- 📖 Documentation
+    - [ ]  Setup Guide
+    - [ ]  Examples
+    - [ ]  Easing Reference
+- 🎮 Demos
+    - [ ]  Object-Based Demo
+    - [ ]  UI-Based Demo
