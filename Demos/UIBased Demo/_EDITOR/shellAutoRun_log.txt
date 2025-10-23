@@ -1,0 +1,5 @@
+S/Unix shell started, type your command.
+>- S:UIBased Demo/sh: can't find: tty fd No such device or address
+>- S:UIBased Demo/sh: warning: won't have full job control
+>- S:UIBased Demo/ :UIBased Demo $ 
+>- S:UIBased Demo/Shell finalized
