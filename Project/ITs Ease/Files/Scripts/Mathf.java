@@ -17,8 +17,8 @@ public final class Mathf {
   public static final float LN2 = 0.6931472f;
   public static final float LN10 = 2.3025851f;
   private static long lastTimeNano = java.lang.System.nanoTime();
-  private static float lastTimeSeconds = java.lang.System.nanoTime() / 1000000000f; 
-  
+  private static float lastTimeSeconds = java.lang.System.nanoTime() / 1000000000f;
+
   // Methods
   public static float abs(float v) {
     return v < 0 ? -v : v;
@@ -53,7 +53,7 @@ public final class Mathf {
     float deltaTime = currentTimeSeconds - lastTimeSeconds;
     lastTimeSeconds = currentTimeSeconds;
     return deltaTime;
-  } 
+  }
 
   public static float ceil(float f) {
     return (float) Math.ceil(f);
@@ -247,4 +247,4 @@ public final class Mathf {
   public static float map(float value, float inMin, float inMax, float outMin, float outMax) {
     return outMin + (outMax - outMin) * ((value - inMin) / (inMax - inMin));
   }
-}
+} 

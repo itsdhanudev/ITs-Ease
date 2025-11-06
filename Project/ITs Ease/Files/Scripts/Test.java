@@ -40,7 +40,7 @@ void repeat() {
       else myTransform.setScale(Easer.easeVec(start, end, t, type));
       break;
     default:
-  } 
+  }
 
   text.setText(new String().format("%.2f", time));
-}
+} 
